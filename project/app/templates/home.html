@@ -1,0 +1,13 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block title %}Home Page{% endblock %}
+{% block addcss %}
+<link rel="stylesheet" href="{% static 'home.css' %}">
+{% endblock %}
+{% block content %}
+    <div class="container d-flex justify-content-between align-items-center p-5">
+        <a href="/signup" class="btn btn-warning">Signup</a>
+        <a href="/showdata" class="btn btn-danger">Showdata</a>
+        <a href="/login" class="btn btn-success">Login</a>
+    </div>
+{% endblock %}

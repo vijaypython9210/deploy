@@ -1,0 +1,15 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block title %}SignupPage{% endblock %}
+{% block addcss %}
+<link rel="stylesheet" href="{% static 'signup.css' %}">{% endblock %}
+{% block content %}
+    <div class="container">
+        <form action="#" method="POST" id="id_form">
+            {% csrf_token %}
+            <h3>Login Your Account</h3>
+            <input type="text" name="name" id="id_name">
+            <input type="submit" class="btn text-white">
+        </form>
+    </div>
+{% endblock %}
